@@ -18,7 +18,7 @@ Filip Svetlečić | fsvetleci22@foi.hr | 0016158898 | fsvetleci22
 
 
 ## Opis domene
-(Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
+U modernom svijetu gdje svi ljudi žive ubrzanim tempom, mnogi stavljaju svoje zdravlje sa strane sve dok nisu primorani kontaktirati liječnika opće prakse. Tu se nalazi problem koji bi ovo softversko rješenje riješilo. Mnogi odgađaju odlazak liječniku zbog dugih redova čekanja ili udaljenosti od svojeg liječnika. Desktop aplikacija „MyDoc“ bi riješila ovaj problem tako što bi korisnici mogli kontaktirati liječnika opće prakse iz udobnosti svojega doma
 
 ## Specifikacija projekta
 (Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)

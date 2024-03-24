@@ -27,7 +27,7 @@ U modernom svijetu gdje svi ljudi žive ubrzanim tempom, mnogi stavljaju svoje z
 Zadatak: https://elf.foi.hr/pluginfile.php/228641/mod_resource/content/3/Korisni%C4%8Dki%20zahtjevi%20-%20Softver%20za%20osobnu%20telemedicinu.pdf
 
 Dokumentacija:
-https://github.com/foivz/pi2024-zadace-fsvetleci22.wiki.git
+https://github.com/foivz/pi2024-zadace-fsvetleci22/wiki
 
 ## Resursi
 (Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)

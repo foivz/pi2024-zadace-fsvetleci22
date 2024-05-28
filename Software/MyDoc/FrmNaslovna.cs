@@ -10,14 +10,29 @@ using System.Windows.Forms;
 
 namespace MyDoc
 {
-    public partial class Form1 : Form
+    public partial class FrmNaslovna : Form
     {
-        public Form1()
+        public FrmNaslovna()
         {
             InitializeComponent();
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmNaslovna_Load(object sender, EventArgs e)
         {
 
         }

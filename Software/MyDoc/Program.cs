@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DBLayer;
 
 namespace MyDoc
 {
@@ -14,9 +15,10 @@ namespace MyDoc
         [STAThread]
         static void Main()
         {
+            DB.SetConfiguration("PI2324_fsvetleci22_DB", "PI2324_fsvetleci22_User", "zmnm");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmNaslovna());
         }
     }
 }

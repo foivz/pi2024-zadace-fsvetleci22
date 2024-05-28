@@ -5,6 +5,11 @@ VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDoc", "MyDoc\MyDoc.csproj", "{A412B5D0-044C-40DE-91BA-C3795EC1CCBC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DLLs", "DLLs", "{E3D9514B-8EFD-4CCD-8D95-2F6C620C62E1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Downloads\DBLayer.dll = ..\..\..\..\Downloads\DBLayer.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -36,5 +36,18 @@ namespace MyDoc
         {
 
         }
+
+        private void FrmNaslovna_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnIzvjestaj_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FrmKorisnici frmKorisnici = new FrmKorisnici();
+            frmKorisnici.ShowDialog();
+            Close();
+        }
     }
 }

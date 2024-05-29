@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblNaslov = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnIzvjestaj = new System.Windows.Forms.Button();
             this.lblIzvještaj = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -46,15 +46,16 @@
             this.lblNaslov.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblNaslov.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // btnIzvjestaj
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.Location = new System.Drawing.Point(328, 275);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 45);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "GENERIRAJ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnIzvjestaj.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnIzvjestaj.Location = new System.Drawing.Point(328, 275);
+            this.btnIzvjestaj.Name = "btnIzvjestaj";
+            this.btnIzvjestaj.Size = new System.Drawing.Size(113, 45);
+            this.btnIzvjestaj.TabIndex = 1;
+            this.btnIzvjestaj.Text = "GENERIRAJ";
+            this.btnIzvjestaj.UseVisualStyleBackColor = false;
+            this.btnIzvjestaj.Click += new System.EventHandler(this.btnIzvjestaj_Click);
             // 
             // lblIzvještaj
             // 
@@ -71,10 +72,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(791, 545);
             this.Controls.Add(this.lblIzvještaj);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnIzvjestaj);
             this.Controls.Add(this.lblNaslov);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmNaslovna";
@@ -82,6 +83,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MyDoc";
             this.Load += new System.EventHandler(this.FrmNaslovna_Load);
+            this.Click += new System.EventHandler(this.FrmNaslovna_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,7 +92,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblNaslov;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIzvjestaj;
         private System.Windows.Forms.Label lblIzvještaj;
     }
 }

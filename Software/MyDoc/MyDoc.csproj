@@ -49,12 +49,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmKorisnici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKorisnici.Designer.cs">
+      <DependentUpon>FrmKorisnici.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmNaslovna.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmNaslovna.Designer.cs">
       <DependentUpon>FrmNaslovna.cs</DependentUpon>
     </Compile>
+    <Compile Include="Klase\Korisnik.cs" />
+    <Compile Include="Klase\RepozitorijKorisnika.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmNaslovna.resx">

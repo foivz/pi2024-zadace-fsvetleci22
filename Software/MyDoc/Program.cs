@@ -15,7 +15,7 @@ namespace MyDoc
         [STAThread]
         static void Main()
         {
-            DB.SetConfiguration("PI2324_fsvetleci22_DB", "PI2324_fsvetleci22_User", "zmnm");
+            DB.SetConfiguration("PI2324_fsvetleci22_DB", "PI2324_fsvetleci22_User", "ZC[:zmnm");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmNaslovna());

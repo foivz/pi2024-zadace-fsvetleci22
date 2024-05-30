@@ -49,5 +49,13 @@ namespace MyDoc
             frmKorisnici.ShowDialog();
             Close();
         }
+
+        private void btnIzvjestaj1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FrmPlacanja frmPlacanja = new FrmPlacanja();
+            frmPlacanja.ShowDialog();
+            Close();
+        }
     }
 }

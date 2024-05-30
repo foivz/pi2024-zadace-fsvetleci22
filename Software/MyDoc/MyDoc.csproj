@@ -61,8 +61,16 @@
     <Compile Include="FrmNaslovna.Designer.cs">
       <DependentUpon>FrmNaslovna.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPlacanja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlacanja.Designer.cs">
+      <DependentUpon>FrmPlacanja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Klase\Korisnik.cs" />
+    <Compile Include="Klase\Placanje.cs" />
     <Compile Include="Klase\RepozitorijKorisnika.cs" />
+    <Compile Include="Klase\RepozitorijPlacanja.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmKorisnici.resx">
@@ -70,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmNaslovna.resx">
       <DependentUpon>FrmNaslovna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlacanja.resx">
+      <DependentUpon>FrmPlacanja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

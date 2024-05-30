@@ -65,6 +65,9 @@
     <Compile Include="Klase\RepozitorijKorisnika.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmKorisnici.resx">
+      <DependentUpon>FrmKorisnici.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmNaslovna.resx">
       <DependentUpon>FrmNaslovna.cs</DependentUpon>
     </EmbeddedResource>

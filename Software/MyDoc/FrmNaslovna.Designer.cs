@@ -60,11 +60,11 @@
             // lblIzvještaj
             // 
             this.lblIzvještaj.AutoSize = true;
-            this.lblIzvještaj.Location = new System.Drawing.Point(242, 256);
+            this.lblIzvještaj.Location = new System.Drawing.Point(302, 256);
             this.lblIzvještaj.Name = "lblIzvještaj";
-            this.lblIzvještaj.Size = new System.Drawing.Size(308, 16);
+            this.lblIzvještaj.Size = new System.Drawing.Size(175, 16);
             this.lblIzvještaj.TabIndex = 2;
-            this.lblIzvještaj.Text = "Izvještaj sa svim korisnicima i njihovim pretplatama";
+            this.lblIzvještaj.Text = "Izvještaj sa svim korisnicima";
             // 
             // FrmNaslovna
             // 

@@ -29,7 +29,7 @@ namespace MyDoc.Klase
         {
             int id = int.Parse(reader["idKorisnika"].ToString());
             string imeIPrezime = reader["imeIPrezime"].ToString();
-            string eMail = reader["E-mail"].ToString();
+            string eMail = reader["eMail"].ToString();
             string statusStudenta = reader["statusStudenta"].ToString();
             float saldo = float.Parse(reader["saldo"].ToString());
 

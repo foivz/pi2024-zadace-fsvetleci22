@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyDoc.Klase;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace MyDoc
         public FrmKorisnici()
         {
             InitializeComponent();
+        }
+
+        private void FrmKorisnici_Load(object sender, EventArgs e)
+        {
+            PrikaziKorisnike();
+
+        }
+
+        private void PrikaziKorisnike()
+        {
+            List<Korisnik> korisnici = RepozitorijKorisnika.IspisKorisnika();
+            dgvKorisnici.DataSource = korisnici;
         }
     }
 }

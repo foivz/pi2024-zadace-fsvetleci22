@@ -34,6 +34,8 @@
             this.btnPovratak = new System.Windows.Forms.Button();
             this.btnIzbrisi = new System.Windows.Forms.Button();
             this.lblBrisanje = new System.Windows.Forms.Label();
+            this.btnAzuriraj = new System.Windows.Forms.Button();
+            this.lblAzuriraj = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlacanja)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +85,7 @@
             // 
             this.btnIzbrisi.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnIzbrisi.Enabled = false;
-            this.btnIzbrisi.Location = new System.Drawing.Point(450, 519);
+            this.btnIzbrisi.Location = new System.Drawing.Point(430, 519);
             this.btnIzbrisi.Name = "btnIzbrisi";
             this.btnIzbrisi.Size = new System.Drawing.Size(86, 44);
             this.btnIzbrisi.TabIndex = 5;
@@ -94,17 +96,40 @@
             // lblBrisanje
             // 
             this.lblBrisanje.AutoSize = true;
-            this.lblBrisanje.Location = new System.Drawing.Point(433, 500);
+            this.lblBrisanje.Location = new System.Drawing.Point(413, 500);
             this.lblBrisanje.Name = "lblBrisanje";
             this.lblBrisanje.Size = new System.Drawing.Size(133, 16);
             this.lblBrisanje.TabIndex = 4;
             this.lblBrisanje.Text = "Izbriši označen redak";
+            // 
+            // btnAzuriraj
+            // 
+            this.btnAzuriraj.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnAzuriraj.Enabled = false;
+            this.btnAzuriraj.Location = new System.Drawing.Point(736, 519);
+            this.btnAzuriraj.Name = "btnAzuriraj";
+            this.btnAzuriraj.Size = new System.Drawing.Size(86, 44);
+            this.btnAzuriraj.TabIndex = 7;
+            this.btnAzuriraj.Text = "AŽURIRAJ";
+            this.btnAzuriraj.UseVisualStyleBackColor = false;
+            this.btnAzuriraj.Click += new System.EventHandler(this.btnAzuriraj_Click_1);
+            // 
+            // lblAzuriraj
+            // 
+            this.lblAzuriraj.AutoSize = true;
+            this.lblAzuriraj.Location = new System.Drawing.Point(683, 500);
+            this.lblAzuriraj.Name = "lblAzuriraj";
+            this.lblAzuriraj.Size = new System.Drawing.Size(219, 16);
+            this.lblAzuriraj.TabIndex = 6;
+            this.lblAzuriraj.Text = "Ažuriraj podatke iz označenog retka";
             // 
             // FrmPlacanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 595);
+            this.Controls.Add(this.btnAzuriraj);
+            this.Controls.Add(this.lblAzuriraj);
             this.Controls.Add(this.btnIzbrisi);
             this.Controls.Add(this.lblBrisanje);
             this.Controls.Add(this.btnPovratak);
@@ -129,5 +154,7 @@
         private System.Windows.Forms.Button btnPovratak;
         private System.Windows.Forms.Button btnIzbrisi;
         private System.Windows.Forms.Label lblBrisanje;
+        private System.Windows.Forms.Button btnAzuriraj;
+        private System.Windows.Forms.Label lblAzuriraj;
     }
 }

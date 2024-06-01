@@ -50,6 +50,7 @@ namespace MyDoc
         private void dgvPlacanja_SelectionChanged(object sender, EventArgs e)
         {
             btnIzbrisi.Enabled = true;
+            btnAzuriraj.Enabled = true;
         }
 
         private void btnIzbrisi_Click(object sender, EventArgs e)
@@ -63,6 +64,18 @@ namespace MyDoc
                 PrikaziKorisnike();
             }
             
+
+        }
+
+        
+
+        private void btnAzuriraj_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            Placanje placanje = dgvPlacanja.CurrentRow.DataBoundItem as Placanje;
+            FrmAzuriraj frmAzuriraj = new FrmAzuriraj(placanje);
+            frmAzuriraj.ShowDialog();
+            Close();
 
         }
     }

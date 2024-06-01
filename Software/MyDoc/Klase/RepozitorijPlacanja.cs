@@ -64,6 +64,14 @@ namespace MyDoc.Klase
             DB.CloseConnection();
         }
 
+        public static void AzurirajPodatkeUBazi(Placanje placanje)
+        {
+            string sql = $"UPDATE Placanja SET nazivKorisnika = '{placanje.nazivKorisnika}', nazivUsluge = '{placanje.nazivUsluge}', cijena = {placanje.cijena}, datumPlaćanja = '{placanje.datumPlacanja}', opisPlaćanja = '{placanje.opisPlacanja}' WHERE idPlaćanja = {placanje.idPlacanja}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
     }
 }
 

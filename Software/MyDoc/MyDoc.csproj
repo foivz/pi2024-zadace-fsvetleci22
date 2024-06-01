@@ -61,6 +61,12 @@
     <Compile Include="FrmNaslovna.Designer.cs">
       <DependentUpon>FrmNaslovna.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmNovoPlacanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNovoPlacanje.Designer.cs">
+      <DependentUpon>FrmNovoPlacanje.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPlacanja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmNaslovna.resx">
       <DependentUpon>FrmNaslovna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNovoPlacanje.resx">
+      <DependentUpon>FrmNovoPlacanje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPlacanja.resx">
       <DependentUpon>FrmPlacanja.cs</DependentUpon>

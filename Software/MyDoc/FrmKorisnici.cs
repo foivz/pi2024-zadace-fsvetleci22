@@ -29,5 +29,13 @@ namespace MyDoc
             List<Korisnik> korisnici = RepozitorijKorisnika.IspisKorisnika();
             dgvKorisnici.DataSource = korisnici;
         }
+
+        private void btnPovratakKorisnik_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FrmNaslovna frmNaslovna = new FrmNaslovna();
+            frmNaslovna.ShowDialog();
+            Close();
+        }
     }
 }

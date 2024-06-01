@@ -13,7 +13,7 @@ namespace MyDoc.Klase
         public static List<Placanje> IspisPlacanja()
         {
             List<Placanje> placanja = new List<Placanje>();
-            string sql = "SELECT p.idPlaćanja, k.imeIPrezime AS nazivKorisnika, u.nazivUsluge, p.cijena, p.datumPlaćanja, p.opisPlaćanja FROM Placanja p JOIN Korisnik k ON p.nazivKorisnika = k.idKorisnika JOIN Usluga u ON p.nazivUsluge = u.idUsluge;";
+            string sql = "SELECT * FROM Placanja";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             while (reader.Read())
@@ -45,5 +45,17 @@ namespace MyDoc.Klase
             };
             return placanje;
         }
+
+
+        public static void DodajUBazu(Placanje placanje)
+        {
+            string sql = $"INSERT INTO Placanja (nazivKorisnika, nazivUsluge, cijena, datumPlaćanja, opisPlaćanja) VALUES ('{placanje.nazivKorisnika}', '{placanje.nazivUsluge}', {placanje.cijena},'{placanje.datumPlacanja}','{placanje.opisPlacanja}')";
+
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
     }
 }
+

@@ -28,5 +28,23 @@ namespace MyDoc
             List<Placanje> placanja = RepozitorijPlacanja.IspisPlacanja();
             dgvPlacanja.DataSource = placanja;
         }
+
+        private void btnDodajPlacanje_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FrmNovoPlacanje frmNovoPlacanje = new FrmNovoPlacanje();
+            frmNovoPlacanje.ShowDialog();
+            Close();
+        }
+
+
+
+        private void btnPovratak_Click(object sender, EventArgs e)
+        {
+            Hide();
+            FrmNaslovna frmNaslovna = new FrmNaslovna();
+            frmNaslovna.ShowDialog();
+            Close();
+        }
     }
 }

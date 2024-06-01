@@ -25,6 +25,22 @@ namespace MyDoc.Klase
             DB.CloseConnection();
             return placanja;
         }
+
+        public static List <Placanje> Pretrazivanje(string tekst)
+        {
+            List <Placanje> placanja = new List<Placanje>();
+            string sql = $"SELECT * FROM Placanja WHERE nazivKorisnika = '{tekst}'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Placanje placanje = CreateObject(reader);
+                placanja.Add(placanje);
+            }
+            reader.Close();
+            DB.CloseConnection();
+            return placanja;
+        }
         private static Placanje CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["idPlaćanja"].ToString());
@@ -71,6 +87,8 @@ namespace MyDoc.Klase
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
+
+        
 
     }
 }

@@ -36,6 +36,10 @@
             this.lblBrisanje = new System.Windows.Forms.Label();
             this.btnAzuriraj = new System.Windows.Forms.Button();
             this.lblAzuriraj = new System.Windows.Forms.Label();
+            this.lblPretrazivanjeNazivKorisnika = new System.Windows.Forms.Label();
+            this.txtPretrazivanjeNazivKorisnika = new System.Windows.Forms.TextBox();
+            this.txtPretrazivanjeNazivUsluge = new System.Windows.Forms.TextBox();
+            this.lblPretrazivanjeNazivUsluge = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlacanja)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,11 +127,48 @@
             this.lblAzuriraj.TabIndex = 6;
             this.lblAzuriraj.Text = "Ažuriraj podatke iz označenog retka";
             // 
+            // lblPretrazivanjeNazivKorisnika
+            // 
+            this.lblPretrazivanjeNazivKorisnika.AutoSize = true;
+            this.lblPretrazivanjeNazivKorisnika.Location = new System.Drawing.Point(151, 22);
+            this.lblPretrazivanjeNazivKorisnika.Name = "lblPretrazivanjeNazivKorisnika";
+            this.lblPretrazivanjeNazivKorisnika.Size = new System.Drawing.Size(202, 16);
+            this.lblPretrazivanjeNazivKorisnika.TabIndex = 8;
+            this.lblPretrazivanjeNazivKorisnika.Text = "Pretrazivanje po nazivu korisnika";
+            // 
+            // txtPretrazivanjeNazivKorisnika
+            // 
+            this.txtPretrazivanjeNazivKorisnika.Location = new System.Drawing.Point(359, 22);
+            this.txtPretrazivanjeNazivKorisnika.Name = "txtPretrazivanjeNazivKorisnika";
+            this.txtPretrazivanjeNazivKorisnika.Size = new System.Drawing.Size(201, 22);
+            this.txtPretrazivanjeNazivKorisnika.TabIndex = 9;
+            this.txtPretrazivanjeNazivKorisnika.TextChanged += new System.EventHandler(this.txtPretrazivanjeNazivKorisnika_TextChanged);
+            // 
+            // txtPretrazivanjeNazivUsluge
+            // 
+            this.txtPretrazivanjeNazivUsluge.Location = new System.Drawing.Point(814, 22);
+            this.txtPretrazivanjeNazivUsluge.Name = "txtPretrazivanjeNazivUsluge";
+            this.txtPretrazivanjeNazivUsluge.Size = new System.Drawing.Size(201, 22);
+            this.txtPretrazivanjeNazivUsluge.TabIndex = 11;
+            // 
+            // lblPretrazivanjeNazivUsluge
+            // 
+            this.lblPretrazivanjeNazivUsluge.AutoSize = true;
+            this.lblPretrazivanjeNazivUsluge.Location = new System.Drawing.Point(620, 22);
+            this.lblPretrazivanjeNazivUsluge.Name = "lblPretrazivanjeNazivUsluge";
+            this.lblPretrazivanjeNazivUsluge.Size = new System.Drawing.Size(188, 16);
+            this.lblPretrazivanjeNazivUsluge.TabIndex = 10;
+            this.lblPretrazivanjeNazivUsluge.Text = "Pretrazivanje po nazivu usluge";
+            // 
             // FrmPlacanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(957, 595);
+            this.ClientSize = new System.Drawing.Size(1218, 740);
+            this.Controls.Add(this.txtPretrazivanjeNazivUsluge);
+            this.Controls.Add(this.lblPretrazivanjeNazivUsluge);
+            this.Controls.Add(this.txtPretrazivanjeNazivKorisnika);
+            this.Controls.Add(this.lblPretrazivanjeNazivKorisnika);
             this.Controls.Add(this.btnAzuriraj);
             this.Controls.Add(this.lblAzuriraj);
             this.Controls.Add(this.btnIzbrisi);
@@ -156,5 +197,9 @@
         private System.Windows.Forms.Label lblBrisanje;
         private System.Windows.Forms.Button btnAzuriraj;
         private System.Windows.Forms.Label lblAzuriraj;
+        private System.Windows.Forms.Label lblPretrazivanjeNazivKorisnika;
+        private System.Windows.Forms.TextBox txtPretrazivanjeNazivKorisnika;
+        private System.Windows.Forms.TextBox txtPretrazivanjeNazivUsluge;
+        private System.Windows.Forms.Label lblPretrazivanjeNazivUsluge;
     }
 }

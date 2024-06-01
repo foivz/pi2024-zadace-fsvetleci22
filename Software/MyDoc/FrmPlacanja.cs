@@ -53,6 +53,8 @@ namespace MyDoc
             btnAzuriraj.Enabled = true;
         }
 
+        
+
         private void btnIzbrisi_Click(object sender, EventArgs e)
         {
 
@@ -76,6 +78,28 @@ namespace MyDoc
             FrmAzuriraj frmAzuriraj = new FrmAzuriraj(placanje);
             frmAzuriraj.ShowDialog();
             Close();
+
+        }
+
+        private void txtPretrazivanjeNazivKorisnika_TextChanged(object sender, EventArgs e)
+        {
+            if(txtPretrazivanjeNazivKorisnika.Text == "")
+            {
+                PrikaziKorisnike();
+            }
+            else
+            {
+                List<Placanje> placanja = RepozitorijPlacanja.Pretrazivanje(txtPretrazivanjeNazivKorisnika.Text);
+                if(placanja.Count > 0)
+                {
+                    dgvPlacanja.DataSource = placanja;
+                }
+                else
+                {
+                    PrikaziKorisnike();
+                }
+            }
+            
 
         }
     }

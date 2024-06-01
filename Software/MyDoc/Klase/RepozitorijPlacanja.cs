@@ -26,10 +26,26 @@ namespace MyDoc.Klase
             return placanja;
         }
 
-        public static List <Placanje> Pretrazivanje(string tekst)
+        public static List <Placanje> PretrazivanjeNazivKorisnika(string tekst)
         {
             List <Placanje> placanja = new List<Placanje>();
             string sql = $"SELECT * FROM Placanja WHERE nazivKorisnika = '{tekst}'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Placanje placanje = CreateObject(reader);
+                placanja.Add(placanje);
+            }
+            reader.Close();
+            DB.CloseConnection();
+            return placanja;
+        }
+
+        public static List<Placanje> PretrazivanjeNazivUsluge(string tekst)
+        {
+            List<Placanje> placanja = new List<Placanje>();
+            string sql = $"SELECT * FROM Placanja WHERE nazivUsluge = '{tekst}'";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
             while (reader.Read())

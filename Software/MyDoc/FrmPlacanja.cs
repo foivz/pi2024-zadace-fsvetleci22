@@ -89,7 +89,7 @@ namespace MyDoc
             }
             else
             {
-                List<Placanje> placanja = RepozitorijPlacanja.Pretrazivanje(txtPretrazivanjeNazivKorisnika.Text);
+                List<Placanje> placanja = RepozitorijPlacanja.PretrazivanjeNazivKorisnika(txtPretrazivanjeNazivKorisnika.Text);
                 if(placanja.Count > 0)
                 {
                     dgvPlacanja.DataSource = placanja;
@@ -101,6 +101,26 @@ namespace MyDoc
             }
             
 
+        }
+
+        private void txtPretrazivanjeNazivUsluge_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPretrazivanjeNazivUsluge.Text == "")
+            {
+                PrikaziKorisnike();
+            }
+            else
+            {
+                List<Placanje> placanja = RepozitorijPlacanja.PretrazivanjeNazivUsluge(txtPretrazivanjeNazivUsluge.Text);
+                if (placanja.Count > 0)
+                {
+                    dgvPlacanja.DataSource = placanja;
+                }
+                else
+                {
+                    PrikaziKorisnike();
+                }
+            }
         }
     }
 }

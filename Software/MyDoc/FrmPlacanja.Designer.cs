@@ -150,6 +150,7 @@
             this.txtPretrazivanjeNazivUsluge.Name = "txtPretrazivanjeNazivUsluge";
             this.txtPretrazivanjeNazivUsluge.Size = new System.Drawing.Size(201, 22);
             this.txtPretrazivanjeNazivUsluge.TabIndex = 11;
+            this.txtPretrazivanjeNazivUsluge.TextChanged += new System.EventHandler(this.txtPretrazivanjeNazivUsluge_TextChanged);
             // 
             // lblPretrazivanjeNazivUsluge
             // 

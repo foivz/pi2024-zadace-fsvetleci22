@@ -32,6 +32,8 @@
             this.lblNovoPlacanje = new System.Windows.Forms.Label();
             this.btnDodajPlacanje = new System.Windows.Forms.Button();
             this.btnPovratak = new System.Windows.Forms.Button();
+            this.btnIzbrisi = new System.Windows.Forms.Button();
+            this.lblBrisanje = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlacanja)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,11 +46,12 @@
             this.dgvPlacanja.RowTemplate.Height = 24;
             this.dgvPlacanja.Size = new System.Drawing.Size(933, 386);
             this.dgvPlacanja.TabIndex = 0;
+            this.dgvPlacanja.SelectionChanged += new System.EventHandler(this.dgvPlacanja_SelectionChanged);
             // 
             // lblNovoPlacanje
             // 
             this.lblNovoPlacanje.AutoSize = true;
-            this.lblNovoPlacanje.Location = new System.Drawing.Point(68, 467);
+            this.lblNovoPlacanje.Location = new System.Drawing.Point(66, 500);
             this.lblNovoPlacanje.Name = "lblNovoPlacanje";
             this.lblNovoPlacanje.Size = new System.Drawing.Size(132, 16);
             this.lblNovoPlacanje.TabIndex = 1;
@@ -57,7 +60,7 @@
             // btnDodajPlacanje
             // 
             this.btnDodajPlacanje.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnDodajPlacanje.Location = new System.Drawing.Point(85, 486);
+            this.btnDodajPlacanje.Location = new System.Drawing.Point(83, 519);
             this.btnDodajPlacanje.Name = "btnDodajPlacanje";
             this.btnDodajPlacanje.Size = new System.Drawing.Size(86, 44);
             this.btnDodajPlacanje.TabIndex = 2;
@@ -76,11 +79,34 @@
             this.btnPovratak.UseVisualStyleBackColor = false;
             this.btnPovratak.Click += new System.EventHandler(this.btnPovratak_Click);
             // 
+            // btnIzbrisi
+            // 
+            this.btnIzbrisi.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnIzbrisi.Enabled = false;
+            this.btnIzbrisi.Location = new System.Drawing.Point(450, 519);
+            this.btnIzbrisi.Name = "btnIzbrisi";
+            this.btnIzbrisi.Size = new System.Drawing.Size(86, 44);
+            this.btnIzbrisi.TabIndex = 5;
+            this.btnIzbrisi.Text = "IZBRIŠI";
+            this.btnIzbrisi.UseVisualStyleBackColor = false;
+            this.btnIzbrisi.Click += new System.EventHandler(this.btnIzbrisi_Click);
+            // 
+            // lblBrisanje
+            // 
+            this.lblBrisanje.AutoSize = true;
+            this.lblBrisanje.Location = new System.Drawing.Point(433, 500);
+            this.lblBrisanje.Name = "lblBrisanje";
+            this.lblBrisanje.Size = new System.Drawing.Size(133, 16);
+            this.lblBrisanje.TabIndex = 4;
+            this.lblBrisanje.Text = "Izbriši označen redak";
+            // 
             // FrmPlacanja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(957, 543);
+            this.ClientSize = new System.Drawing.Size(957, 595);
+            this.Controls.Add(this.btnIzbrisi);
+            this.Controls.Add(this.lblBrisanje);
             this.Controls.Add(this.btnPovratak);
             this.Controls.Add(this.btnDodajPlacanje);
             this.Controls.Add(this.lblNovoPlacanje);
@@ -101,5 +127,7 @@
         private System.Windows.Forms.Label lblNovoPlacanje;
         private System.Windows.Forms.Button btnDodajPlacanje;
         private System.Windows.Forms.Button btnPovratak;
+        private System.Windows.Forms.Button btnIzbrisi;
+        private System.Windows.Forms.Label lblBrisanje;
     }
 }

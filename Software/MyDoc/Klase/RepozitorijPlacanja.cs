@@ -56,6 +56,15 @@ namespace MyDoc.Klase
             DB.CloseConnection();
         }
 
+        public static void IzbrisiIzBaze(Placanje placanje)
+        {
+            string sql = $"DELETE FROM Placanja WHERE idPlaćanja = {placanje.idPlacanja}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
     }
 }
+
 

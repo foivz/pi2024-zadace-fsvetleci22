@@ -46,5 +46,24 @@ namespace MyDoc
             frmNaslovna.ShowDialog();
             Close();
         }
+
+        private void dgvPlacanja_SelectionChanged(object sender, EventArgs e)
+        {
+            btnIzbrisi.Enabled = true;
+        }
+
+        private void btnIzbrisi_Click(object sender, EventArgs e)
+        {
+
+            Placanje placanje = dgvPlacanja.CurrentRow.DataBoundItem as Placanje;
+            DialogResult dijalog = MessageBox.Show("Jeste li sigurni da želite obrisati ovaj redak?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dijalog != DialogResult.No)
+            {
+                RepozitorijPlacanja.IzbrisiIzBaze(placanje);
+                PrikaziKorisnike();
+            }
+            
+
+        }
     }
 }

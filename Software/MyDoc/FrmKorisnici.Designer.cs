@@ -30,13 +30,15 @@
         {
             this.dgvKorisnici = new System.Windows.Forms.DataGridView();
             this.btnPovratakKorisnik = new System.Windows.Forms.Button();
+            this.lblPopisKorisnikaNaslov = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvKorisnici
             // 
+            this.dgvKorisnici.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dgvKorisnici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKorisnici.Location = new System.Drawing.Point(29, 77);
+            this.dgvKorisnici.Location = new System.Drawing.Point(29, 123);
             this.dgvKorisnici.Name = "dgvKorisnici";
             this.dgvKorisnici.RowHeadersWidth = 51;
             this.dgvKorisnici.RowTemplate.Height = 24;
@@ -54,19 +56,36 @@
             this.btnPovratakKorisnik.UseVisualStyleBackColor = false;
             this.btnPovratakKorisnik.Click += new System.EventHandler(this.btnPovratakKorisnik_Click);
             // 
+            // lblPopisKorisnikaNaslov
+            // 
+            this.lblPopisKorisnikaNaslov.AutoSize = true;
+            this.lblPopisKorisnikaNaslov.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblPopisKorisnikaNaslov.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblPopisKorisnikaNaslov.Location = new System.Drawing.Point(254, 33);
+            this.lblPopisKorisnikaNaslov.Name = "lblPopisKorisnikaNaslov";
+            this.lblPopisKorisnikaNaslov.Size = new System.Drawing.Size(319, 39);
+            this.lblPopisKorisnikaNaslov.TabIndex = 5;
+            this.lblPopisKorisnikaNaslov.Text = "POPIS KORISNIKA";
+            // 
             // FrmKorisnici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(815, 526);
+            this.Controls.Add(this.lblPopisKorisnikaNaslov);
             this.Controls.Add(this.btnPovratakKorisnik);
             this.Controls.Add(this.dgvKorisnici);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmKorisnici";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmKorisnici";
+            this.Text = "Korisnici";
             this.Load += new System.EventHandler(this.FrmKorisnici_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -74,5 +93,6 @@
 
         private System.Windows.Forms.DataGridView dgvKorisnici;
         private System.Windows.Forms.Button btnPovratakKorisnik;
+        private System.Windows.Forms.Label lblPopisKorisnikaNaslov;
     }
 }

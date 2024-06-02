@@ -39,10 +39,10 @@
             // 
             this.lblNaslov.AutoSize = true;
             this.lblNaslov.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.lblNaslov.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNaslov.Location = new System.Drawing.Point(229, 148);
+            this.lblNaslov.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblNaslov.Location = new System.Drawing.Point(201, 131);
             this.lblNaslov.Name = "lblNaslov";
-            this.lblNaslov.Size = new System.Drawing.Size(343, 36);
+            this.lblNaslov.Size = new System.Drawing.Size(397, 39);
             this.lblNaslov.TabIndex = 0;
             this.lblNaslov.Text = "DOBRO DOŠLI ADMINE";
             this.lblNaslov.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -51,7 +51,7 @@
             // btnIzvjestaj
             // 
             this.btnIzvjestaj.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnIzvjestaj.Location = new System.Drawing.Point(201, 275);
+            this.btnIzvjestaj.Location = new System.Drawing.Point(163, 332);
             this.btnIzvjestaj.Name = "btnIzvjestaj";
             this.btnIzvjestaj.Size = new System.Drawing.Size(113, 45);
             this.btnIzvjestaj.TabIndex = 1;
@@ -62,25 +62,27 @@
             // lblIzvještaj
             // 
             this.lblIzvještaj.AutoSize = true;
-            this.lblIzvještaj.Location = new System.Drawing.Point(175, 256);
+            this.lblIzvještaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblIzvještaj.Location = new System.Drawing.Point(115, 300);
             this.lblIzvještaj.Name = "lblIzvještaj";
-            this.lblIzvještaj.Size = new System.Drawing.Size(175, 16);
+            this.lblIzvještaj.Size = new System.Drawing.Size(223, 20);
             this.lblIzvještaj.TabIndex = 2;
             this.lblIzvještaj.Text = "Izvještaj sa svim korisnicima";
             // 
             // lblPlaćanja
             // 
             this.lblPlaćanja.AutoSize = true;
-            this.lblPlaćanja.Location = new System.Drawing.Point(459, 256);
+            this.lblPlaćanja.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblPlaćanja.Location = new System.Drawing.Point(451, 300);
             this.lblPlaćanja.Name = "lblPlaćanja";
-            this.lblPlaćanja.Size = new System.Drawing.Size(173, 16);
+            this.lblPlaćanja.Size = new System.Drawing.Size(218, 20);
             this.lblPlaćanja.TabIndex = 4;
             this.lblPlaćanja.Text = "Izvještaj sa svim plaćanjima";
             // 
             // btnIzvjestaj1
             // 
             this.btnIzvjestaj1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnIzvjestaj1.Location = new System.Drawing.Point(485, 275);
+            this.btnIzvjestaj1.Location = new System.Drawing.Point(504, 332);
             this.btnIzvjestaj1.Name = "btnIzvjestaj1";
             this.btnIzvjestaj1.Size = new System.Drawing.Size(113, 45);
             this.btnIzvjestaj1.TabIndex = 3;
